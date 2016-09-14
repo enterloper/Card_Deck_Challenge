@@ -152,7 +152,6 @@ describe('shuffleDeck behavior', () => {
 });
 
 describe('drawOne behavior', function () {
-  console.log('155--------------->', standard.deck.length);
 
   beforeEach(function() {
     standard =  Object.create(NewDeck);
