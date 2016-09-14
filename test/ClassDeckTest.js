@@ -198,17 +198,13 @@ describe('drawOne behavior', function () {
   it('should draw one through the entirety of the deck', function() {
     var last_card;
     var temp;
-    console.log('198--------------->', standard.deck.length);
     
     for(let i=standard.deck.length-1; i>=0; i--){
-      console.log('------------->i',standard.deck[i]);
       temp = standard.drawOne();
-      console.log('------------->temp',temp);
       if(i === 0) {
         last_card = temp;
       }
     }
-    console.log('206--------------->', last_card);
 
     expect(last_card).to.not.be.undefined;
   });
